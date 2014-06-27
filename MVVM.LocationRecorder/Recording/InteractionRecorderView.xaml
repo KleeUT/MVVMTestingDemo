@@ -1,0 +1,37 @@
+﻿<UserControl x:Class="MVVM.LocationRecorder.Recording.InteractionRecorderView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <UserControl.Resources>
+        <Style TargetType="Label" x:Key="RecorderLabel">
+            <Setter Property="Width" Value="150" />
+            <Setter Property="HorizontalContentAlignment" Value="Center"/> 
+        </Style>
+        <Style TargetType="TextBox" >
+            <Setter Property="Width" Value="140" />
+            <Setter Property="Height" Value="50" />
+            <Setter Property="Margin" Value="5"></Setter>
+            <Setter Property="HorizontalContentAlignment" Value="Center"/>
+            <Setter Property="Padding" Value="12.5"></Setter>
+            <Setter Property="TextWrapping" Value="NoWrap"></Setter>
+        </Style>
+        <Style TargetType="Button">
+            <Setter Property="Width" Value="140" />
+            <Setter Property="Height" Value="50" />
+        </Style>
+    </UserControl.Resources>
+    <StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <Label Style="{StaticResource RecorderLabel}">First Name</Label>
+            <Label Style="{StaticResource RecorderLabel}">Last Name</Label>
+            <Label Style="{StaticResource RecorderLabel}">Longitude</Label>
+            <Label Style="{StaticResource RecorderLabel}">Latitude</Label>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <TextBox Name="FirstName" />
+            <TextBox Name="LastName" />
+            <TextBox Name="Longitude" />
+            <TextBox Name="Latitude" />
+            <Button Name="Save" Content="Save" />
+        </StackPanel>
+    </StackPanel>
+</UserControl>

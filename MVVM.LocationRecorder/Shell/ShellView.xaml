@@ -1,0 +1,11 @@
+﻿<Window x:Class="MVVM.LocationRecorder.ShellView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:Recording="clr-namespace:MVVM.LocationRecorder.Recording"
+        xmlns:Displaying="clr-namespace:MVVM.LocationRecorder.Displaying"
+        Title="ShellView" Height="600" Width="800">
+    <StackPanel>
+        <ContentControl x:Name="InteractionRecorder" HorizontalAlignment="Center"/>
+        <ContentControl x:Name="InteractionDisplayer" HorizontalAlignment="Center"/>
+    </StackPanel>
+</Window>
