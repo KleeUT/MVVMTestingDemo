@@ -111,7 +111,6 @@
         private readonly Location UoN = new Location(-32.892287, 151.704210);
 
         
-
         private List<Interaction> initialValues;
 
         private InteractionDisplayerComponentTests Given { get { return this; } }
